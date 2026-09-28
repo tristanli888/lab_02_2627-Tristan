@@ -43,13 +43,16 @@ print("Hello world")
 vector = c(1,2,3,4,5)
 vector
 
-vector2 = 
+vector2 = c(1,1000)
+vector2
 
 mat = matrix(1:100, nrow=10, ncol=10)
 mat
+
+
 df <- data.frame(
-    name = c("Flipper", "Tux", "Pingu"),
-    age = c("Adelie", "Gentoo", "Emperor"),
+    name = c("Tristan", "Xiao Bao", "Eason"),
+    age = c(20, 24, 31)
 )
 df
 ```
