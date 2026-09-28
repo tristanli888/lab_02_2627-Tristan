@@ -21,16 +21,39 @@ format:
 
 ### Tasks
 
-- [ ] Print "Hello World" to the console. 
+- [x] Print "Hello World" to the console. 
 - [ ] Write a function that takes a name, and prints "Hello <name>" to the console.
-- [ ] Assign the value 42 to a variable called `answer`.
-- [ ] Create a numeric vector containing the numbers 1 through 5.
-- [ ] Create a numeric vector containing the numbers 1 through 1000.
-- [ ] Create a matrix with 10 rows and 10 columns filled with numbers 1 to 100.
+- [x] Assign the value 42 to a variable called `answer`.
+- [x] Create a numeric vector containing the numbers 1 through 5.
+- [x] Create a numeric vector containing the numbers 1 through 1000.
+- [x] Create a matrix with 10 rows and 10 columns filled with numbers 1 to 100.
 - [ ] Create a data frame with two columns: one called `name` containing three names, and one called `age` containing three ages.
 - [ ] Write a function that returns the square of its input.
 - [ ] Use a for loop to print the numbers 1 to 5.
 - [ ] Use a for loop to compute the mean of a numeric vector.
+
+```{r}
+print("Hello world")
+
+
+```
+
+```{r}
+42 <- answer
+vector = c(1,2,3,4,5)
+vector
+
+vector2 = 
+
+mat = matrix(1:100, nrow=10, ncol=10)
+mat
+df <- data.frame(
+    name = c("Flipper", "Tux", "Pingu"),
+    age = c("Adelie", "Gentoo", "Emperor"),
+)
+df
+```
+
 
 
 ## Part 1b: Lists
