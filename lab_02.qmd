@@ -27,7 +27,7 @@ format:
 - [x] Create a numeric vector containing the numbers 1 through 5.
 - [x] Create a numeric vector containing the numbers 1 through 1000.
 - [x] Create a matrix with 10 rows and 10 columns filled with numbers 1 to 100.
-- [ ] Create a data frame with two columns: one called `name` containing three names, and one called `age` containing three ages.
+- [x] Create a data frame with two columns: one called `name` containing three names, and one called `age` containing three ages.
 - [ ] Write a function that returns the square of its input.
 - [ ] Use a for loop to print the numbers 1 to 5.
 - [ ] Use a for loop to compute the mean of a numeric vector.
@@ -36,6 +36,12 @@ format:
 print("Hello world")
 
 
+f<-function(name){
+  
+  print(paste('Hello', name))
+}
+
+f('tristan')
 ```
 
 ```{r}
@@ -55,6 +61,8 @@ df <- data.frame(
     age = c(20, 24, 31)
 )
 df
+
+
 ```
 
 
@@ -213,6 +221,26 @@ make_square(5)
 .   .
 .....
 ```
+
+```{r}
+make_square <- function(size) {
+  return <- ""
+  for(row in 1:size) {
+    for(col in 1:size) {
+      if(row == 1 && col == 1) return <- paste0(return, ".")
+      if(row == 1 && col == 2) return <- paste0(return, ".")
+      if(row == 1 && col == 3) return <- paste0(return, ".\n")
+      if(row == 2 && col == 1) return <- paste0(return, ".")
+    }
+  }
+  return
+}
+
+cat(make_square(3))
+
+```
+
+
 
 - [ ] (Advanced): Look up *while loops* in `R`. Write a function that uses a while loop to simulate a particle undergoing a *random walk* in 1D. Starting from 0, in each iteration, the particle either takes a step $x \mapsto x + 1$ or $x \mapsto x - 1$, uniformly at random. Terminate the walk when the particle reaches either -10 or +10, and print where it ended up and how many steps it took.
 - [ ] (Advanced): Run your function from above multiple times. Display how often the particle ended at -10 and how often it ended at +10. Make sure that your results do not change if the worksheet is run multiple times!
